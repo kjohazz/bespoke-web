@@ -1,0 +1,185 @@
+.title {
+    text-align: right;
+    width: 40%;
+    padding-left: 43%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.logo-header-home {
+    width: 60%;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+
+     .title {
+         width: 60%;
+         padding-left: 10%;
+     }
+ 
+     .logo-header-home {
+         width: 80%;
+     }
+  
+ }
+
+ .font-style-title-v {
+    font-weight: 300;
+}
+
+.redes-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*Redes sociales*/
+.redes-header-icons ul{
+    list-style: none;
+}
+
+.redes-header-icons a {
+    color: var(--primary-color);
+}
+
+.redes-header-icons i{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 5px;  
+  border: 1px solid var(--secondary-color);
+}
+
+.redes-header-icons i:hover {
+    color: var(--primary-red);
+    border: 1px solid var(--primary-red);
+}
+
+.redes-header-text {
+    width: 150px;
+}
+
+.msj-home {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+}
+
+.msj-home-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.msj-home-img img{
+    width: 50%;
+    z-index: 5;
+    margin-top: 50px;
+}
+
+.msj-home-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.msj-home-text h2 {
+    color: var(--secondary-color);
+    width: 50%;
+    text-align: right;
+    font-weight: 300;
+}
+
+.msj-home-text h2 span {
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 568px) {
+
+ .msj-home {
+    flex-direction: column;
+ }
+
+ .msj-home-img {
+    width: 100%;
+    align-items: center;
+ }
+
+ .msj-home-img img {
+    width: 80%;
+    margin-top: -50px;
+ }
+
+ .msj-home {
+    height: auto;
+ }
+
+ .msj-home-text {
+    width: 100%;
+ }
+
+ .msj-home h2 {
+    width: 80%;
+    padding-bottom: 50px;
+ }
+
+ .content-img {
+    width: 20px!important;
+ }
+
+ .content-text h3 {
+    width: 100%!important;
+    font-size: 1.2rem!important;
+ }
+
+ .content-text {
+   margin: 0 auto!important;
+ }
+
+ .content-img {
+    display: none;
+ }
+
+ .content-text-p {
+    width: 73%!important;
+}
+ 
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 10%;
+}
+
+.content-text h3 {
+    width: 70%;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.content-text-p {
+    align-self: flex-end;
+    width: 60%;
+}
+
+.content-img {
+    background-image: url('../img/cuadros.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: auto;
+}
+
+.text-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
