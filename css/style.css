@@ -80,6 +80,10 @@ button {
     margin-top: 25px;
 }
 
+.m-top-l {
+    margin-top: 100px;
+}
+
 .b-black {
     background-color: var(--primary-color);
 }
@@ -169,6 +173,10 @@ button {
  
 }
 
+.logo-header-other {
+    width: 10%;
+}
+
 
 /*Card Diseño*/
 
@@ -202,11 +210,64 @@ button {
     flex-direction: row;
     gap: 20px;
     list-style: none;
-    justify-content: end;
     margin-right: 50px;
+}
+
+.footer-redes-other{
+    justify-content: left;
+}
+
+.footer-redes-home {
+    justify-content: end;
 }
 
 .footer-redes i {
     color: var(--primary-color);
     font-size: 1.5rem;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    margin-right: 80px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.button-form {
+    background-color:#000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-display {
+    display: flex;
+    justify-content: end;
+}
+
+.form-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
 }
