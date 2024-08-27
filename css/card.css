@@ -3,11 +3,14 @@
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     padding: 20px;
-    margin: 20px 0; /* Espacio entre tarjetas */
     width: 80%; /* Ancho adaptable para móviles */
-    max-width: 350px; /* Ancho máximo en pantallas más grandes */
     display: flex;
     flex-direction: column;
+}
+
+.card-home {
+    max-width: 350px; /* Ancho máximo en pantallas más grandes */
+    margin: 25px;
 }
 
 .card-content {
@@ -39,20 +42,26 @@
 }
 
 .arrow-icon img {
-    width: 20px; /* Ajusta el tamaño del ícono según necesites */
+    width: 20px; 
     height: auto;
 }
 
-@media (min-width: 768px) { /* Ajusta el breakpoint según tus necesidades */
+@media (min-width: 768px) { /*ajustes para desktop*/
     body {
-        flex-direction: row; /* Cambia a disposición horizontal en pantallas más grandes */
-        align-items: flex-start; /* Alinea las tarjetas al inicio del eje vertical */
+        flex-direction: row; 
+        align-items: flex-start; 
     }
 
-    .card {
-        width: 45%; /* Ajusta el ancho de las tarjetas para que quepan dos en una fila */
-        margin: 20px; /* Espacio alrededor de las tarjetas */
+    .card-home {
+        width: 45%; 
     }
+
+    .card-project {
+        flex-direction: row!important;
+        gap: 5%;
+    }
+    
+   
 }
 
 .card-section {
@@ -67,3 +76,30 @@
     align-self: flex-end;
 }
 
+.card-project {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-position {
+    position: relative;
+}
+
+.card-p{
+    width: 60%;
+}
+
+.card-img {
+    width: 40%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.card-content-pading {
+    padding-left: 30px;
+}
+
+.card-content-pading h2 {
+    margin-top: 30px;
+}

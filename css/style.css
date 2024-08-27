@@ -114,6 +114,9 @@ button {
     padding: 20px;
 }
 
+/**/
+/* NAVEGACIÓN */
+/**/
 .menu ul {
     list-style: none;
     margin: 0;
@@ -147,6 +150,7 @@ button {
 
 
 /* Adaptación para dispositivos móviles */
+
 @media (max-width: 768px) {
    .menu ul {
        flex-direction: column; 
@@ -178,16 +182,21 @@ button {
 }
 
 
-/*Card Diseño*/
-
+/**/
+/*Card Diseño - GLOBAL*/
+/**/
 .card-global {
     display: flex;
     flex-direction: column;
 }
 
 
+/**/
+/*FOOTER GENERAL*/
+/**/
+
 .footer {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .footer-black {
@@ -203,6 +212,10 @@ button {
     color: var(--secondary-color);
     padding-left: 5%;
     padding-bottom: 50px;
+}
+
+.footer-text-other {
+    padding-top: 100px;
 }
 
 .footer-redes {
@@ -226,6 +239,10 @@ button {
     font-size: 1.5rem;
 }
 
+
+/**/
+/*CONTACTO*/
+/**/
 
 form {
     background-color: #fff;
@@ -270,4 +287,44 @@ textarea {
 .form-wrap {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+/**/
+/*PROJECT*/
+/**/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333; /* Color de texto */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+}
+
+.pagination .active {
+    background-color: #c0392b; /* Color de fondo rojo */
+    color: #fff; /* Color de texto blanco */
+}
+
+.pagination a:hover{
+    background-color: #c0392b; /* Color de fondo rojo */
+    color: #fff;
+}
+
+.pagination .arrow {
+    font-weight: bold;
+}
+
+.pagination .ellipsis {
+    margin: 0 10px;
 }
