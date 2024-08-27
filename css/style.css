@@ -287,6 +287,11 @@ textarea {
 .form-wrap {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+.form-b {
+    border: 1px black solid;
 }
 
 /**/
